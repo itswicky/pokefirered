@@ -4813,11 +4813,8 @@ static void Task_LearnedMove(u8 taskId)
     u16 item = gSpecialVar_ItemId;
 
     if (learnMoveMethod == LEARN_VIA_TMHM)
-    {
         AdjustFriendship(mon, FRIENDSHIP_EVENT_LEARN_TMHM);
-        if (item <= ITEM_TM50)
-            RemoveBagItem(item, 1);
-    }
+        
     GetMonNickname(mon, gStringVar1);
     StringCopy(gStringVar2, gMoveNames[learnMoveId]);
     StringExpandPlaceholders(gStringVar4, gText_PkmnLearnedMove3);
