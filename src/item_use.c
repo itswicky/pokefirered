@@ -573,8 +573,10 @@ static void Task_UseRepel(u8 taskId)
 }
 
 void Cycle_Through_Repels(void)
-{
-    u16 RepelCycle[] = {ITEM_REPEL, ITEM_SUPER_REPEL, ITEM_MAX_REPEL};
+{//Once the last repel of the chosen type has been depleted, find the next lowest repel class 
+ //and start using it! (Set it as VAR_REPEL_LAST_USED)
+
+    u16 RepelCycle[] = {ITEM_REPEL, ITEM_SUPER_REPEL, ITEM_MAX_REPEL};    
     u8 i = 0;
 
     while (gSpecialVar_Result == FALSE){
@@ -585,7 +587,7 @@ void Cycle_Through_Repels(void)
         if (i > 2)
             return;
     }
-
+    
     return;
 }
 
