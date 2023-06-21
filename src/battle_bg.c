@@ -207,7 +207,7 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] = {
         .bg = 0,
         .tilemapLeft = 23,
         .tilemapTop = 55,
-        .width = 1,
+        .width = 2,
         .height = 2,
         .paletteNum = 5,
         .baseBlock = 0x290
@@ -228,7 +228,7 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] = {
         .width = 5,
         .height = 2,
         .paletteNum = 5,
-        .baseBlock = 0x298
+        .baseBlock = 0x2a6
     },
     [B_WIN_PSS_ICON] = {
         .bg = 0,
