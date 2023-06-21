@@ -2527,9 +2527,9 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_PSS_ICON] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL,
+        .fontId = FONT_NORMAL_COPY_1,
         .x = 0,
-        .y = 1,
+        .y = 0,
         .letterSpacing = 0,
         .lineSpacing = 2,
         .speed = 0,
