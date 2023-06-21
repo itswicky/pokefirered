@@ -2892,7 +2892,7 @@ static void MoveSelectionDisplaySplitIcon(void){
 	moveInfo = (struct ChooseMoveStruct*)(&gBattleBufferA[gActiveBattler][MAX_BATTLERS_COUNT]);
     moveCategory = gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].category;
 	LoadPalette(sSplitIcons_Pal, 10 * 0x10, 0x20);
-	BlitBitmapToWindow(B_WIN_PSS_ICON, sSplitIcons_Gfx + 0x40 * moveCategory, 0, 0, 16, 16);
+	BlitBitmapToWindow(B_WIN_PSS_ICON, sSplitIcons_Gfx + 0x80 * moveCategory, 0, 0, 16, 16);
 	PutWindowTilemap(B_WIN_PSS_ICON);
 	CopyWindowToVram(B_WIN_PSS_ICON, 3);
 }
