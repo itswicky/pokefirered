@@ -31,6 +31,7 @@
 #include "constants/maps.h"
 #include "constants/metatile_behaviors.h"
 #include "constants/items.h"
+#include "item.h"
 
 #define SIGNPOST_POKECENTER 0
 #define SIGNPOST_POKEMART 1
