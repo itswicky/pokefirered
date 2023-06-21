@@ -645,6 +645,10 @@ Score_Minus12::
 	score -12
 	end
 
+Score_Minus30::
+	score -30
+	end
+
 Score_Plus1::
 	score +1
 	end
