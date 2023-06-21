@@ -154,6 +154,8 @@ static u8 ChooseWildMonIndex_Fishing(u8 rod)
 
 static u8 ChooseWildMonLevel(const struct WildPokemon * info)
 {
+    u8 min;
+    u8 max;
     u8 mod;
     u8 res;
     u8 fixedLVL = 0;
@@ -173,8 +175,8 @@ static u8 ChooseWildMonLevel(const struct WildPokemon * info)
 	}
 
     // Make sure minimum level is less than maximum level
-    u8 min = fixedLVL - 3;
-    u8 max = fixedLVL + 3;
+    min = fixedLVL - 3;
+    max = fixedLVL + 3;
 	if (min <= 0)
 		min = 1;
     mod = max -min + 1;
